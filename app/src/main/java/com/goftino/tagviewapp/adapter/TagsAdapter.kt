@@ -8,7 +8,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.goftino.tagviewapp.R
 import com.goftino.tagviewapp.databinding.TagBinding
-
+/*
+github https://github.com/debug-ing
+insta @debug_ing
+telegram @debug_ing
+ */
 class TagsAdapter(private val dataSet: ArrayList<String>) :RecyclerView.Adapter<TagsAdapter.ViewHolder>()  {
     inner class ViewHolder (val view:TagBinding) :RecyclerView.ViewHolder(view.root){
         init {
@@ -28,10 +32,16 @@ class TagsAdapter(private val dataSet: ArrayList<String>) :RecyclerView.Adapter<
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.view.text.text = dataSet[position]
     }
+    /*
+    Delete Item With index
+     */
     fun delete(index:Int){
         dataSet.removeAt(index)
         notifyItemRemoved(index)
     }
+    /*
+   Add Item
+    */
     fun add(text:String){
         dataSet.add(text)
         notifyItemInserted(dataSet.size -1)

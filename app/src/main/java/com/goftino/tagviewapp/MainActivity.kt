@@ -20,13 +20,12 @@ class MainActivity : AppCompatActivity() {
         make()
     }
     fun make(){
-
         data = ArrayList<String>()
-        data.add("Ajay")
-        data.add("Vijay")
-        data.add("Prakash")
-        data.add("Rohan")
-        data.add("Vijay")
+        data.add("Ali")
+        data.add("Reza")
+        data.add("Mahdi")
+        data.add("Ali Reza")
+        data.add("Akbar")
         val layoutManager = FlexboxLayoutManager(this)
         tags = TagsAdapter(data)
         list.adapter = tags
