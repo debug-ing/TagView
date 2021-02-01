@@ -6,4 +6,3 @@ Sample TegView With Flexbox
 # Base
 
 https://github.com/google/flexbox-layout
-
